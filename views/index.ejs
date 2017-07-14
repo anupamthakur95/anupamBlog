@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+    <body id="index" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#index">Anupam Kumar Blog</a>
+        </div>
+      <div class="container ">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/login">LogIn</a></li>
+            <li><a href="/register">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1>Best Profession</h1>
+      <p>Engineering.....</p>
+      <img src="/public/images/program.png" class="img-responsive img-thumbnail" style="display:inline;" alt="program" width="1000" height="565">
+      <br>
+      <br>
+    <p>Enjoy with coding.......</p>
+    </div>
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>About</h2><br>
+          <h4>
+            This blog tells about how to learn languages to build wep pages, how to write efficient codes and to make familiar with the electronics and communication.
+            Main motto of this blog to spread the knowledge of Technology in each and every mind.
+          </h4>
+    </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div id="topics" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>Topics</h2><br>
+          <h4>
+
+          </h4>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">Topics covered in Blog</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="/public/images/ece.png" class="img-responsive margin" style="width:100%" alt="ece">
+          <p>Java is an Object oriented programming language as well as Functional Programming language.
+          Latest version of Java is Java 8.</p>
+        </div>
+        <div class="col-sm-4">
+          <p>
+            <img src="/public/images/java.png" class="img-responsive margin" style="width:100%" alt="java">
+        </div>
+        <div class="col-sm-4">
+          <img src="/public/images/programs.png" class="img-responsive margin" style="width:100%" alt="programs">
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <a class="up-arrow" href="#index" data-toggle="tooltip" title="GO TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+    </footer>
+    <script>
+    $('body').scrollspy({target: ".navbar", offset: 50});
+    $("#myNavbar a,footer a").on('click', function(event) {
+    if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+    scrollTop: $(hash).offset().top
+    }, 1000, function(){
+    window.location.hash = hash;
+    });
+    }
+    });
+    </script>
+    </body>
+</html>

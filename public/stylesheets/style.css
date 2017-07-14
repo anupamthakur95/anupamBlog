@@ -1,0 +1,38 @@
+.navbar-default.navbar-fixed-top{
+  background-color: coral;
+  border-color: coral;
+  border-radius: 0;
+}
+
+.navbar-collapse.myNavbar{
+  background-color: coral;
+  border-color: coral;
+  border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #8ef5e5;
+}
+.navbar-nav li a:hover {
+  color: #8ef5e5;
+}
+
+.jumbotron.text-center {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  background-color: coral;
+}
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+}
+footer a {
+  color: #f5f5f5;
+}
+footer a:hover {
+  color: #8ef5e5;
+  text-decoration:aqua;
+}
+
+

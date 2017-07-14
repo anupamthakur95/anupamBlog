@@ -1,0 +1,9 @@
+div.image-container{
+    text-align: center;
+}
+div.container{
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 300px;
+}
